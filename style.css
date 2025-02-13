@@ -1,14 +1,110 @@
-
-
-
-h1 {
-	color: red;
-	background: rgb(36,3,0);
-	background: linear-gradient(90deg, rgba(36,3,0,1) 4%, rgba(121,9,96,1) 46%, rgba(0,212,255,1) 98%);
-}
-
-body {
-	background: rgb(36,3,0);
-	background: linear-gradient(180deg, rgba(36,3,0,1) 4%, rgba(121,9,96,1) 46%, rgba(0,212,255,1) 98%);
+h1{
+    background-color: #b4a1a1;
+    padding: 5%;
+    color: antiquewhite;
+    font-size: 5vw;
+    display: flex; 
+    justify-content: center;
 
 }
+
+.header{
+    background-color: rgb(171, 208, 68);
+
+}
+
+body{
+    background-color: rgb(81, 81, 81);
+}
+
+.content{
+    background-color: rgb(96, 10, 23);
+    border-radius: 1vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: fit-content;
+    padding: 5%;
+    margin: 5%;
+    align-items: center;
+} 
+
+.content2 {
+    background-color: rgb(45, 79, 45);
+}
+
+.content2content {
+    display: flex;
+}
+
+#box1{
+    background-color: #b18080;
+    border-radius: 1vw;
+    align-content: center;
+    text-align: left;
+    padding: 20px; 
+    width: 300px;
+    height: 40%;
+    overflow: hidden;
+    font-size: 2vw;
+    
+}
+
+#img1 {
+    align-items: right;
+    border-radius: 1vw;
+    justify-content: center;
+    object-fit: cover;
+    width: 50%;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+#header2 {
+    color: rgb(221, 145, 95);
+    text-align: center;
+    background-color: rgb(88, 132, 132);
+}
+
+#para2 {
+    color: white;
+    font-size: 2vw;
+    background-color: rgb(20, 96, 71);
+    width: 80%;
+    padding: 2%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 1vw;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.sec2{
+    background-color: rgb(138, 165, 200);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5%;
+}
+
+.box2{
+    background-color: #962828;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    padding: 10px;
+    
+}
+
+#sec2img{
+    width: 80%;
+    height: auto;
+    border-radius: 2vw;
+    margin-top: 5px;
+}
+
+
