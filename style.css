@@ -1,3 +1,8 @@
+
+
+
+
+
 h1{
     background-color: #b4a1a1;
     padding: 5%;
@@ -15,6 +20,7 @@ h1{
 
 body{
     background-color: rgb(81, 81, 81);
+    margin: 0;
 }
 
 .content{
