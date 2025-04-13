@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VietHub</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Viet Le Duy — Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="clock.js"></script>
+  <script scr="player.js"></script>
+  <script src="https://w.soundcloud.com/player/api.js"></script>
 </head>
 <body>
 
-    <header>
-        <a href="index.html">
-            <img src="your-logo.png" alt="Your Logo">
-        </a>
-    </header>
-
-    <section class="intro">
-        <h1>Hello, I'm Viet Le Duy</h1>
-        <p>Welcome to my Hub! I'm a guy who loves to create and trying new things.</p>
-        <p>Here you'll find a collection of my fun projects and creations.</p>
-    </section>
-
-    <section class="projects">
-        <div class="project-card">
-            <a href="thecube.html">
-                <img src="/img/thecube.jpg" alt="the cube game thumbnail">
-                <div class="card-content">
-                    <h3>The Cube</h3>
-                    <p>My first game created with the help of Gemini.</p>
-                </div>
-            </a>
+    <div class="row">
+      <!-- Grouped left section -->
+      <div class="left-group">
+        <div class="box logo-box">
+          <div class="logo">VIET LE DUY</div>
         </div>
-
-        <div class="project-card">
-            <a href="article.html">
-                <img src="/img/fungirl.jpg" alt="Article Thumbnail">
-                <div class="card-content">
-                    <h3>My Article</h3>
-                    <p>An article I wrote about [Topic].</p>
-                </div>
-            </a>
+        <div class="box intro-box">
+          <div class="intro">Welcome to my hub, browse around and let me show you my love of creating cool things. ✨</div>
         </div>
+      </div>
 
-        <div class="project-card">
-            <a href="paintings.html">
-                <img src="/img/fungirl.jpg" alt="Painting Thumbnail">
-                <div class="card-content">
-                    <h3>My Paintings</h3>
-                    <p>A showcase of my recent art pieces.</p>
-                </div>
-            </a>
-        </div>
+      <!-- Clock box on the right -->
+      <div class="box clock-box">
+        <div id="clock">--:--:--</div>
+      </div>
+    </div>
 
-    </section>
+  <!-- Row 2: Gallery Button + Quote + Image -->
+  <div class="row">
+    <div class="box">
+      <a href="/gallery.html" class="btn">Who is Viet? 😎</a>
+    </div>
+    <div class="box">   
+      <div class="quote">Years go by and life start kicking in. Work, bills, everything... but still, the love for paintings, music, dancing and creating is there. The best wishes for you and me to keep the fire burning forever!
+      </div>
+    </div>
+    <div class="box image-box">
+      <img src="/img/vietava.png" alt="My work or profile image" />
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; [Love] [VietLeDuy]</p>
-    </footer>
+  <div class="ribbon">keep on creating!</div>
+
+  <div class="featimg">
+    <img src="/img/bombbot.jpg" class="featimg-img" alt="a robot sitting infront of bunch of bombs">
+    <div class="featimg-info">
+      <p class="featimg-p">Latest Artwork - Mission Accomplished!</p>
+      <a href="/gallery.html" class="btn">See my Gallery! 🎨</a>
+    </div>
+  </div>
+
+  <div class="sec3">
+    <div class=sec3-left>
+      <p> Here's something I am going to say</p>
+    </div>
+    <div class="sec3-right">
+      <div class="sec3-blog">
+        <p class="sec3-blog-p">I have been working in the Creative field for over 10 years with bunch of projects. Want to find out something fun, experiences or my stories?</p>
+        <a href="blog.html" class="btn">Read Viet's Blog ✒️</a>
+      </div>
+      <div class="sec3-song">
+        <p class="sec3-song-p">If you find this page is so still and quiet...Here's my latest track!</p>
+        <iframe 
+          id="soundcloud-player"
+          width=0 
+          height=0
+          
+          scrolling="no" 
+          frameborder="no" 
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/475472937&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe> 
+
+        <button id="playPauseBtn">▶️ Play</button>
+      </div>
+    </div>
+    
+  </div>
 
 </body>
 </html>
