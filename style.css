@@ -1,86 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
 body {
-    font-family: 'Gotham', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-    min-height: 100vh;
+  background-color: rgba(30, 30, 30, 1.0);
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.row:first-of-type {
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* left-aligns content */
+}
+
+.left-group {
     display: flex;
-    flex-direction: column;
+    gap: 20px;
+    flex: 1;
 }
 
-header {
-    background-color: #282828;
-    padding: 20px;
+
+.row:first-of-type .box:nth-child(2) {
+  flex: 1; /* fills remaining space */
+}
+
+.row:not(:first-of-type) {
+  justify-content: center;
+}
+
+.row:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw; /* force full screen width */
+    gap: 0; /* remove gap if you want the boxes to touch edges */
+    margin: 0 -20px;
+    box-sizing: border-box;
+}
+
+.row:nth-of-type(2) .box {
+
+  flex: 0 0 calc(33.33% - 40px); /* each takes equal share */
+  max-width: 33.33%;
+  margin: 0 20px;
+  border-radius: 0; /* optional: edge-to-edge look */
+
+
+}
+
+.box {
+  background-color: rgba(10, 10, 10, 0.2);
+  border-radius: 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+  padding: 20px;
+  flex: 1 1 0;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
     text-align: center;
-}
-
-header img {
-    max-height: 100px;
-    filter: brightness(1.2);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #909090;
 }
 
 .intro {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #202020;
+    
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
 }
 
-.projects {
-    padding: 40px 20px;
+.clock-box {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    max-width: 150px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #999;
+    padding-left: 10px;
+
+}
+
+.btn {
+      padding: 10px 20px;
+      background-color: #741;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.quote {
+    display: flex;
+    text-align: center;
+    max-width: 300px;
+    font-style: italic;
+    color: #888;
+    
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+
+}
+
+.ribbon {
+    background-color: rgba(20, 20, 20, 1.0);
+    color: dimgrey;
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.featimg{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
+    align-items: center;
+
 }
 
-.project-card {
-    width: 300px;
-    height: 400px; /* Set a fixed height for the card */
-    margin: 20px;
-    border: 1px solid #333;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-    background-color: #282828;
-    display: flex;
-    flex-direction: column;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card img {
+.featimg-img{
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;   
 }
 
-.project-card .card-content {
-    padding: 20px;
+.featimg-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    color: grey;
+    gap: 20px;
 }
 
-.project-card h3 {
-    margin-top: 0;
+.sec3{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(10, 10, 10, 0.2);
+    
 }
 
-.project-card a {
-    text-decoration: none;
-    color: inherit;
+.sec3-left {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: whitesmoke;
+    width: 40%;
+    align-items: center;
+    background-color: rgba(10, 10, 10, 0.2);
+}
+.sec3-right{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: dimgrey;
+    width: 60%;
+
+}
+
+.sec3-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(40, 40, 40, 1.0);
+    padding-bottom: 30px;
+}
+
+.sec3-blog-p{
+    width: 400px;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sec3-song{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    background-color: rgba(10, 10, 10, 0.5);
+
 }
 
-footer {
-    background-color: #1a1a1a;
-    color: #9e9e9e;
-    text-align: center;
-    padding: 20px;
+.sec3-song-p{
+    color: dimgrey;
+    width: 400px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Gotham:wght@400;700&display=swap');
+.sec3-song button {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+    transition: background 0.3s;
+}
+
+.sec3-song button:hover {
+  background-color: #444;
+}
+
+
+@media (max-width: 768px) {
+  /* Stack first row: logo, intro, clock */
+  .row:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .left-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+
+  }
+
+  .clock-box {
+    max-width: 30%;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 1rem;
+    align-self: flex-start;
+    text-align: right;
+  }
+
+  /* Stack second row boxes */
+  .row:nth-of-type(2) {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .row:nth-of-type(2) .box {
+    width: 100%;
+    margin: 10px 0;
+    max-width: none;
+  }
+
+  /* Adjust box spacing and text alignment */
+  .box {
+    flex: none;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .quote {
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding: 10px 5px;
+  }
+
+  .ribbon {
+    font-size: 2.5rem;
+    padding: 15px 10px;
+  }
+}
