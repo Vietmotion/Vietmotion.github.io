@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Viet Le Duy — Homepage</title>
+  <title>Viet Le Duy — Viet's Hub</title>
   <link rel="stylesheet" href="style.css" />
   <script src="clock.js"></script>
-  <script scr="player.js"></script>
+  <script src="player.js"></script>
   <script src="https://w.soundcloud.com/player/api.js"></script>
 </head>
 <body>
@@ -15,7 +15,7 @@
       <!-- Grouped left section -->
       <div class="left-group">
         <div class="box logo-box">
-          <div class="logo">VIET LE DUY</div>
+          <a href="index.html" class="logo">VIET's hub</a>
         </div>
         <div class="box intro-box">
           <div class="intro">Welcome to my hub, browse around and let me show you my love of creating cool things. ✨</div>
@@ -31,21 +31,21 @@
   <!-- Row 2: Gallery Button + Quote + Image -->
   <div class="row">
     <div class="box">
-      <a href="/gallery.html" class="btn">Who is Viet? 😎</a>
+      <a href="/about.html" class="btn">Who is Viet? 😎</a>
     </div>
     <div class="box">   
       <div class="quote">Years go by and life start kicking in. Work, bills, everything... but still, the love for paintings, music, dancing and creating is there. The best wishes for you and me to keep the fire burning forever!
       </div>
     </div>
     <div class="box image-box">
-      <img src="/img/vietava.png" alt="My work or profile image" />
+      <img src="img/vietava3.jpg" alt="My work or profile image" />
     </div>
   </div>
 
   <div class="ribbon">keep on creating!</div>
 
   <div class="featimg">
-    <img src="/img/bombbot.jpg" class="featimg-img" alt="a robot sitting infront of bunch of bombs">
+    <img src="img/bombbot.jpg" class="featimg-img" alt="a robot sitting infront of bunch of bombs">
     <div class="featimg-info">
       <p class="featimg-p">Latest Artwork - Mission Accomplished!</p>
       <a href="/gallery.html" class="btn">See my Gallery! 🎨</a>
@@ -54,12 +54,12 @@
 
   <div class="sec3">
     <div class=sec3-left>
-      <p> Here's something I am going to say</p>
+      <p id="call"> Hey hey!</p>
     </div>
     <div class="sec3-right">
       <div class="sec3-blog">
         <p class="sec3-blog-p">I have been working in the Creative field for over 10 years with bunch of projects. Want to find out something fun, experiences or my stories?</p>
-        <a href="blog.html" class="btn">Read Viet's Blog ✒️</a>
+        <a target="_blank" href="https://www.vietleduy.com/" class="btn">See Viet's main Page ✒️</a>
       </div>
       <div class="sec3-song">
         <p class="sec3-song-p">If you find this page is so still and quiet...Here's my latest track!</p>
@@ -67,17 +67,33 @@
           id="soundcloud-player"
           width=0 
           height=0
-          
           scrolling="no" 
           frameborder="no" 
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/475472937&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
         </iframe> 
-
-        <button id="playPauseBtn">▶️ Play</button>
+        <button id="playPauseBtn">▶️  Play</button>
       </div>
+    </div> 
+  </div>
+
+  <div class="sec4">
+    <div class="sec4-left">
+      <p>I also have a creative studio in Ho Chi Minh city. We do creative designs, motion graphic, corporate videos. Check it out for even more amazing work, haha!</p>
     </div>
-    
+    <div class="sec4-mid">
+      <img src="img/MScover.jpg" alt="The image of Mighty Stone"> 
+    </div>
+    <div class="sec4-right">
+      <p>Here's my business</p>
+      <a target="_blank" href="https://www.mightystone.vn/" class ="btn">Check out Mighty Stone!</a>
+    </div>
+  </div>
+
+  <div class="cta">
+    <p>Contact for work</p>
+    <p>+84 899 312 653</p>
+    <p>Email: viet.motiondesign@gmail.com</p>
   </div>
 
 </body>
