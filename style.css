@@ -82,7 +82,7 @@ body {
 }
 
 .intro {
-    
+    max-width: 300px;
     font-size: 1rem;
     margin-top: 10px;
     color: #555;
@@ -138,8 +138,8 @@ body {
     font-size: 4rem;
     font-weight: 300;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -172,7 +172,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: rgba(10, 10, 10, 0.2);
-    
+    margin-top: 20px;
 }
 
 .sec3-left {
@@ -183,6 +183,11 @@ body {
     width: 40%;
     align-items: center;
     background-color: rgba(10, 10, 10, 0.2);
+}
+
+#call{
+    font-size: 3rem;
+    font-style: italic;
 }
 .sec3-right{
     display: flex;
@@ -205,7 +210,7 @@ body {
 }
 
 .sec3-blog-p{
-    width: 400px;
+    width: 60%;
     max-width: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -220,21 +225,25 @@ body {
     height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
     color: whitesmoke;
     background-color: rgba(10, 10, 10, 0.5);
 
 }
 
 .sec3-song-p{
+
     color: dimgrey;
-    width: 400px;
+    
+
 }
 
 .sec3-song button {
     display: flex;
     justify-content: center;
-    background-color: #222;
-    color: #fff;
+    background-color: rgb(80,40,20);
+    color: rgb(200,100,100);
     border: none;
     padding: 10px 15px;
     margin-top: 15px;
@@ -248,6 +257,66 @@ body {
   background-color: #444;
 }
 
+
+.sec4{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+
+}
+
+.sec4-left{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+.sec4-mid{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 300px;
+  background-color: blue;
+  
+}
+
+.sec4-mid img{
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+
+.sec4-right{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+
+}
+
+.sec4 p{
+    color: #888;
+    margin: 10px;
+} 
+
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    color: #555;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; 
+
+}
 
 @media (max-width: 768px) {
   /* Stack first row: logo, intro, clock */
@@ -300,8 +369,36 @@ body {
     padding: 10px 5px;
   }
 
-  .ribbon {
+  .ribbon {   
     font-size: 2.5rem;
     padding: 15px 10px;
   }
+
+
+  .sec3-left{
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  .sec4{
+    flex-direction: column;
+
+  }
+
+  .sec4-left{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+
+  .sec4-mid{
+    width: 100%;
+  }
+
+  .sec4-right{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
 }
