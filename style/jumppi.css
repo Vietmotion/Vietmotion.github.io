@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(20,30,30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    position: relative;
+    width: 800px; /* Changed to 800px */
+    height: 800px; /* Changed to 800px */
+    border: 2px solid #333;
+    background-color: rgb(30,60,60);
+    overflow: hidden;
+}
+
+#character {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    left: 375px; /* Adjusted to center */
+    bottom: 375px; /* Adjusted to center */
+}
+
+.red-box {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}

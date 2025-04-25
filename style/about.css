@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  background-color: rgba(30, 30, 30, 1.0);
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.row:first-of-type {
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* left-aligns content */
+}
+
+.left-group {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+
+.row:first-of-type .box:nth-child(2) {
+  flex: 1; /* fills remaining space */
+}
+
+.row:not(:first-of-type) {
+  justify-content: center;
+}
+
+.row:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw; /* force full screen width */
+    gap: 0; /* remove gap if you want the boxes to touch edges */
+    margin: 0 -20px;
+    box-sizing: border-box;
+}
+
+.row:nth-of-type(2) .box {
+
+  flex: 0 0 calc(33.33% - 40px); /* each takes equal share */
+  max-width: 33.33%;
+  margin: 0 20px;
+  border-radius: 0; /* optional: edge-to-edge look */
+
+
+}
+
+.box {
+  background-color: rgba(10, 10, 10, 0.2);
+  border-radius: 0px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+  padding: 20px;
+  flex: 1 1 0;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #909090;
+}
+
+.intro {
+    max-width: 300px;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.clock-box {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    max-width: 150px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #999;
+    padding-left: 10px;
+
+}
+
+.btn {
+      padding: 10px 20px;
+      background-color: #741;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.quote {
+    display: flex;
+    text-align: center;
+    max-width: 300px;
+    font-style: italic;
+    color: #888;
+    
+}
+
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  background-color: ;
+}
+
+.main .left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 20%;
+}
+
+.main img{
+  width: 400px;
+  border-radius: 20px;
+  height
+
+}
+
+.main .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: #888;
+  background-color: ;
+  padding-right: 10%;
+  padding-left: 10%;
+
+
+}
+
+.main .right .mscall{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+  background-color:;
+
+}
+
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    color: #555;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; 
+
+}
+
+@media (max-width: 768px) {
+  /* Stack first row: logo, intro, clock */
+  .row:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .left-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+
+  }
+
+  .clock-box {
+    max-width: 30%;
+    justify-content: center;
+    padding: 5px 10px;
+    font-size: 1rem;
+    align-self: flex-start;
+    text-align: right;
+  }
+
+  /* Stack second row boxes */
+  .row:nth-of-type(2) {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .row:nth-of-type(2) .box {
+    width: 100%;
+    margin: 10px 0;
+    max-width: none;
+  }
+
+  /* Adjust box spacing and text alignment */
+  .box {
+    flex: none;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .quote {
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding: 10px 5px;
+  }
+
+  .ribbon {   
+    font-size: 2.5rem;
+    padding: 15px 10px;
+  }
+
+
+  .sec3-left{
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  .sec4{
+    flex-direction: column;
+
+  }
+
+  .sec4-left{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+
+  .sec4-mid{
+    width: 100%;
+  }
+
+  .sec4-right{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+}
