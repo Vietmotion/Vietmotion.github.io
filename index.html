@@ -4,19 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Viet Le Duy — Viet's Hub</title>
+  <link rel="icon" type="image/x-icon" href="img/vldlogo.png">
   <link rel="stylesheet" href="style.css" />
   <script src="clock.js"></script>
   <script src="player.js"></script>
+  <script src="script.js"></script>
   <script src="https://w.soundcloud.com/player/api.js"></script>
 </head>
 <body>
 
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="img/vldlogo.png" alt="Logo">
+    </a>
+    <h1 class="title">Viet's Hub</h1>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="navMenu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+  </header>
+
     <div class="row">
       <!-- Grouped left section -->
       <div class="left-group">
-        <div class="box logo-box">
-          <a href="index.html" class="logo">VIET's hub</a>
-        </div>
         <div class="box intro-box">
           <div class="intro">Welcome to my hub, browse around and let me show you my love of creating cool things. ✨</div>
         </div>
@@ -82,7 +100,7 @@
       <p>I also have a creative studio in Ho Chi Minh city. We do creative designs, motion graphic, corporate videos. Check it out for even more amazing work, haha!</p>
     </div>
     <div class="sec4-mid">
-      <img src="img/MScover.jpg" alt="The image of Mighty Stone"> 
+      <img src="img/mscover2.jpg" alt="The image of Mighty Stone"> 
     </div>
     <div class="sec4-right">
       <p>Here's my business</p>
