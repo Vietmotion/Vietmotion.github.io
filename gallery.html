@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="style/gallery.css" />
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo">
+          <img src="img/vldlogo.png" alt="Logo">
+        </a>
+        <h1 class="title">Viet's Artworks</h1>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav id="navMenu" class="nav-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+      </header>
+
+      <div class="tag-filter">
+        <button class = "tag-btn" onclick="filterByTag('All', this)">All</button>
+        <button class = "tag-btn" onclick="filterByTag('2D', this)">2D</button>
+        <button class = "tag-btn" onclick="filterByTag('3D', this)">3D</button>
+        <button class = "tag-btn" onclick="filterByTag('Traditional', this)">Traditional</button>
+      </div>  
+  
+    <div class="container">
+      <div class="firstrow">
+        <div class ="left-section">
+          <div class="gallery">
+            <img src="img/bombbot.jpg" alt="Robot sitting in front of bombs" data-tag="2D" data-id="bombbot" data-description="Mission Accomplished!" onclick="showArtwork(this)">
+            <img src="img/Temple of Anubis.png" alt="Temple of Anubis" data-tag="3D" data-id="anubis" data-description="Temple of Anubis" onclick="showArtwork(this)">
+            <img src="img/Lola Trip.png" alt="Lola Trip" data-tag="3D" data-id="lola-trip" data-description="Lola Trip" onclick="showArtwork(this)">
+            <img src="img/Martha.png" alt="Martha" data-tag="2D" data-id="martha" data-description="Martha da Singer" onclick="showArtwork(this)">
+            <img src="img/Orb of Wisdom.png" alt="Orb of Wisdom" data-tag="3D" data-id="orb" data-description="The Orb of Wisdom" onclick="showArtwork(this)">
+            <img src="img/The Factory.png" alt="The Factory" data-tag="3D" data-id="factory" data-description="The Factory" onclick="showArtwork(this)">
+            <img src="img/The Orient Devil.jpg" alt="Orient Devil" data-tag="2D" data-id="orientdevil" data-description="orientdevil" onclick="showArtwork(this)">
+            <img src="img/Too Much Vaping.png" alt="Too Much Vaping" data-tag="3D" data-id="vaping" data-description="too much vaping" onclick="showArtwork(this)">
+            <img src="img/Its Cupid.png" alt="It's Cupid" data-tag="2D" data-id="cupid" data-description="It's cupid" onclick="showArtwork(this)">
+            <img src="img/MiTom.png" alt="Mi Tom" data-tag="2D" data-id="mitom" data-description="Mi Tom" onclick="showArtwork(this)">
+            <img src="img/Waiting for Summer.png" alt="Waiting for Summer" data-tag="2D" data-id="summer" data-description="Waiting for the Summer" onclick="showArtwork(this)">
+            <img src="img/Lola by the sun.png" alt="Lola by the Sun" data-tag="3D" data-id="martha" data-description="Lola by the Sun" onclick="showArtwork(this)">
+            <img src="img/Lola by the sun.png" alt="Lola by the Sun" data-tag="3D" data-description="Lola by the Sun" onclick="showArtwork(this)">
+            <img src="img/Lola by the sun.png" alt="Lola by the Sun" data-tag="3D" data-description="Lola by the Sun" onclick="showArtwork(this)">
+
+          </div>
+        </div>
+
+        <div class="right-section">
+          <div class="preview" id="preview">
+            <img id="largeImage" src="" alt="Large view">
+            <h2 id ="title"></h2>
+            <p id="description"></p>
+          </div>
+        
+          <div id="fullscreenOverlay" class="fullscreen-overlay" onclick="closeFullscreen()">
+            <img id="fullscreenImage" src="" alt="Full view">
+          </div>
+        </div> 
+      </div>
+
+      <div class="secondrow">
+        <div class="pagination">
+          <button onclick="prevPage()" id="prevBtn">Previous</button>
+          <button onclick="nextPage()" id="nextBtn">Next</button>
+        </div> 
+      </div>
+
+    </div>
+
+     
+  
+      
+  
+    <script src="gallery.js"></script>
+    
+  </body>
+</html>

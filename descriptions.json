@@ -1,0 +1,64 @@
+{
+  "bombbot": {
+      "title": "Bombbot",
+      "description": "This robot sits quietly in front of a wall of defused bombs. A calm after the storm, captured in stylized 2D."
+  },
+
+  "anubis": {
+      "title": "Temple of Anubis",
+      "description": "The Temple of Anubis is a sacred and mysterious structure modeled in 3D, inspired by Egyptian mythology."
+  },
+
+
+  "lola-trip": {
+      "title": "Lola's Trip",
+      "description": "Lola embarks on a colorful, stylized journey through vibrant space."
+  },
+
+
+  "martha": {
+      "title": "Martha",
+      "description": "Martha da Singer is a 2D tribute to classic soul and jazz, painted with love and rhythm."
+  },
+
+  "orb": {
+      "title": "The Orb of Wisdom",
+      "description": "The Orb of Wisdom glows with mystic light. A 3D art piece capturing intellect and magic."
+  },
+   
+  "factory": {
+      "title": "The Factory",
+      "description": "The Orb of Wisdom glows with mystic light. A 3D art piece capturing intellect and magic."
+  },
+   
+
+  "lola-sun": {
+      "title": "Lola's trip",
+      "description": "Lola bathing in golden sunlight. A 3D character moment filled with warmth."
+  },
+
+    "orientdevil": {
+      "title": "The Orient Devil",
+      "description": "With the inspiration of the Japanese's mask, I painted this many years ago when I first got my ipad."
+  },
+
+      "vaping": {
+      "title": "Too Much Vaping",
+      "description": "The flavors are so good! But just stop! It is not really good for you!"
+  },
+
+      "cupid": {
+      "title": "It's Cupid",
+      "description": "Cupid is power by Tinder! Here for your love!"
+  },
+
+      "mitom": {
+      "title": "Mi Tom",
+      "description": "Mi Tom is hot and ready!"
+  },
+
+        "summer": {
+      "title": "Waiting for Summer",
+      "description": "Just the summer vibe!"
+  }
+}
