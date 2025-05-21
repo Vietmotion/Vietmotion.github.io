@@ -5,6 +5,109 @@
   font-family: Montserrat, sans-serif;
 }
 
+/* Header Styles */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #202020;
+  border-bottom: 0px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #8f8f8f;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #606060;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  display: none;
+  flex-direction: column;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.nav-menu li {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: #ffcc00;
+}
+
+/* Hover effect on hamburger */
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+/* Add transition to spans */
+.hamburger span {
+  transition: 0.3s ease-in-out;
+}
+
+/* Hamburger open state – turns into an X */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 body {
   background-color: rgba(30, 30, 30, 1.0);
   padding: 20px;
@@ -31,13 +134,14 @@ body {
     flex: 1;
 }
 
-
 .row:first-of-type .box:nth-child(2) {
   flex: 1; /* fills remaining space */
+
 }
 
 .row:not(:first-of-type) {
   justify-content: center;
+
 }
 
 .row:nth-of-type(2) {
@@ -79,7 +183,10 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: #909090;
+    
 }
+
+
 
 .intro {
     max-width: 300px;
@@ -116,7 +223,7 @@ body {
 
 .quote {
     display: flex;
-    text-align: center;
+    text-align: left;
     max-width: 300px;
     font-style: italic;
     color: #888;
@@ -361,12 +468,15 @@ body {
     flex: none;
     max-width: 100%;
     padding: 15px;
+
   }
 
   .quote {
     max-width: 100%;
     font-size: 0.95rem;
     padding: 10px 5px;
+    text-align: left;
+
   }
 
   .ribbon {   
