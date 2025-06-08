@@ -1,7 +1,11 @@
 #!/bin/bash
+
 rm -rf docs/*
-mkdir -p docs/assets
+mkdir -p docs
+
 cp index.html docs/
-cp style.css docs/
-cp -r assets/* docs/assets/
+cp -r img docs/
+cp -r style docs/
+cp -r Sound docs/
+cp -r style.css docs/
 touch docs/.nojekyll
